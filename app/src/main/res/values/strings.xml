@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sudoku Master</string>
+    <string name="title_play">Sudoku Game Play</string>
+    <string name="title_home">Home</string>
+    <string name="title_solve">Sudoku Solver</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_clear">Clear All</string>
+    <string name="action_new">New Game</string>
+    <string name="action_solver">Solver</string>
+    <string name="action_play">Play Sudoku</string>
+</resources>

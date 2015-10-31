@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <LinearLayout
+        android:id="@+id/icon_lay"
+        android:layout_width="@dimen/view_height"
+        android:layout_height="@dimen/view_height"
+        android:layout_below="@id/bar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_view"
+        android:background="@drawable/circular_view"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/logo_margin"
+            android:layout_height="@dimen/logo_margin"
+            android:src="@drawable/icon_main" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/view_height1"
+        android:layout_height="@dimen/view_height1"
+        android:layout_marginTop="-15dp"
+        android:background="@drawable/circular_view"
+        android:onClick="game"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/play"
+        android:textSize="@dimen/textSize"
+        android:layout_margin="@dimen/margin_view"
+        android:text="Sudoku\nGame"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="@dimen/view_height1"
+        android:layout_height="@dimen/view_height1"
+        android:layout_marginBottom="@dimen/margin_view"
+        android:layout_marginRight="@dimen/margin_view"
+        android:id="@+id/solve"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/circular_view"
+        android:onClick="solver"
+        android:textSize="@dimen/textSize"
+        android:text="Sudoku\nSolver"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/bar"
+        android:background="@drawable/toolbar_shadow" />
+
+
+</RelativeLayout>

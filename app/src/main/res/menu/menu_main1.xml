@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.intrusoft.sudokumaster.HomeActivity">
+
+    <item
+        android:id="@+id/solver"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/action_solver"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/next"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:title="@string/action_new"
+        app:showAsAction="ifRoom"/>
+
+</menu>
